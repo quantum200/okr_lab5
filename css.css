@@ -1,0 +1,85 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("field.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.menu {
+    overflow: hidden;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.menu a {
+    padding: 14px 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.menu a:active {
+    font-weight: bold;
+}
+
+.menu a:visited {
+    font-style: italic;
+}
+
+/* Перший елемент меню */
+.menu a:first-child {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.content {
+    padding: 20px;
+    position: relative;
+    flex: 1;
+}
+
+.image-block {
+    float: left;
+    margin-right: 20px;
+}
+
+.image-block img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.text-block {
+    overflow: hidden;
+}
+
+.text-block p::after {
+    content: " ⚽";
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer::before {
+    content: "📣 ";
+}
